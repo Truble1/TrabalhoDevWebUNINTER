@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!--link para o arquivo css com os estilos para esta pagina-->
+    <link rel="stylesheet" href="../Trabalho/estiloContato.css">
+</head>
+<body>
+    <!--div para criacao do grid-->
+    <div class="container">
+        <header class="box topo">
+            <h1>Contato</h1>
+        </header>
+        <!--nav com lista para navegacao entre paginas-->
+        <nav class="box navegacao">
+            <ul>
+                <li><a href="../Trabalho/sobreMim.html">Sobre mim</a></li>
+                <li><a href="../Trabalho/formacao.html">Formação</a></li>
+                <li><a href="../Trabalho/portfolio.html">Portfólio</a></li>
+                <li><a href="../Trabalho/index.html">Apresentação Inicial</a></li>
+            </ul>
+        </nav>
+        <!--Parte onde há o conteudo principal da pagina-->
+        <section class="box principal">
+            <div>
+                <!--Tabela contendo minhas informacoes para contato-->
+                <table class="firstTable" border="2px">
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                            <th>Linkedin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>pedroigorverissimo@gmail.com</td>
+                            <td>(21)980455239</td>
+                            <td><a href="https://www.linkedin.com/in/pedro-igor-verissimo-do-nascimento-4185b320b">Pedro linkedin</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Formulario para o empregador colocar suas infos de contato-->
+                <form action="" method="POST">
+                    <h3>Favor adicionar suas informações caso tenha interesse</h3>
+                    <table>
+                        <tr>
+                            <th><label for="nome">Nome:</label></th>
+                            <td><input type="text" name="nome" id="nome" placeholder="Digite seu nome"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="email">Email:</label></th>
+                            <td><input type="email" name="email" id="email" placeholder="Digite seu email"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="nomeEmpresa">Nome da empresa:</label></th>
+                            <td><input type="text" name="nomeEmpresa" id="nomeEmpresa" placeholder="Digite a empresa"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="submit" id="submit" value="Enviar"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <footer class="box rodape">
+            <p>footer</p>
+        </footer>
+    </div>
+</body>
+</html>

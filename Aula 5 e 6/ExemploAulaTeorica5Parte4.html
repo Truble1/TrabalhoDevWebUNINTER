@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando janela aberta JavaScript</title>
+    <script type="text/javascript">
+        //Variavel janelaAberta utiliza window.open() para abrir uma janela
+        var janelaAberta = window.open('','','width=400,height=400');
+        function testarJanela() {
+            if (janelaAberta.closed) {
+                alert('A janela foi fechada');
+            } else{
+                alert('A janela esta aberta');
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="testarJanela()">Testar Janela</button>
+</body>
+</html>
